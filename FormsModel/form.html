@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <h2> <b>Send us an Email</b></h2>
+<div class="column1">
+    <div class="name">
+        <div>Name:</div>
+        <input type="text"/>      
+    </div>
+
+    <div class="email">
+        <div>Email:</div>
+        <input type="text"/>
+    </div>
+
+    <div class="phone">
+        <div>Phone:</div>
+        <input type="number"/>
+    </div>
+</div>
+
+<div class="column2">
+    <div class="subject">
+        <div>Subject:</div>
+        <input type="text"/>
+    </div>
+
+    <div>
+        <div>Services</div>
+        <select>
+            <option>--SelectOne--</option>
+            <option>Example1</option>
+            <option>Example2</option>
+            <option>Example3</option>
+        </select>
+    </div>
+</div>
+    <div class="message">
+        <div>Message:</div>
+        <textarea cols="2" rows="2"></textarea>
+    </div>
+    <div class="button">
+        <button type="submit">Submit Comment</button>
+    </div>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            
+        }
+        h2{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            
+        }
+        .column1{
+            display: flex;  
+            
+        }
+        .column1 .input{
+            display:flex;
+            justify-items: center; 
+            margin: right 5%;
+        }
+        .column2{
+            display: flex;
+        }
+        
+
+    </style>
+    
+    
+</body>
+</html>

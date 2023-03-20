@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shipping Address</title>
+</head>
+<body>
+    <h1>Shipping Address </h1>
+    <hr>    
+    <div>
+        <form>
+            <label>Phone Number*</label>
+            <input type="text" required placeholder="1234" minlength="1" maxlength="10"/>
+            <label>Company</label>
+            <input type="text">
+            <label>Country*</label>
+            <select>
+                <option>India</option>
+                <option>Australia</option>
+                <option>Germany</option>
+                <option>Venice</option>
+            </select>
+            <label>Address Finder</label>
+            <input type="search" placeholder="Victoria Street ,Richmond VLC Australia"/>
+            <label>Street Address*</label>
+            <input type="text" required><br>
+            <input type="text" required>
+            <label>Suub*</label>
+            <input type="text"/>
+            <label>Zip/PostalCode*</label>
+            <input type="text" required />  
+            <input type="checkbox" />Save in the address
+        </form>
+        <style>
+            label{
+                display: flex;
+            }
+            
+        </style>
+    </div>
+</body>
+</html>
