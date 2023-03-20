@@ -222,7 +222,8 @@ for i in range(len(data)):
     for j in range(len(data)):
         if data[j]==17:
             a=a+1
-print(a)        
+print(a)     
+print("hello")   
 
 
 
