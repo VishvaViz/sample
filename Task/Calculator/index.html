@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Calculator</title>
+    <script src="./script.js" rel="text/javascript">
+    </script>
+</head>
+<body> 
+    <div class="dark">
+        <button class="btn" onclick="color_Dark()" ondblclick="color_Light()" onmouseover="normal()">Theme</button>
+    </div>
+    <div class="container" id="dark"> 
+        <div class="button">
+            <div class="row">
+                <h1>Calculator</h1>
+            </div>
+            <input id="result"type="text" placeholder="0">
+                <table >
+                    <tr>
+                        <td><button id="2" onclick="allclear()">A/C</button></td>
+                        <td><button class="btn-operator" onclick="display('/')">&divide;</button></td>
+                        <td><button class="btn-operator" onclick="display('*')">&times;</button></td>
+                        <td><button class="btn-operator" onclick="del('<')"><</button></td>
+                    </tr>
+                    <tr>
+                        <td><button class="btn-number" onclick="display('7')">7</button></td>
+                        <td><button class="btn-number" onclick="display('8')">8</button></td>
+                        <td><button class="btn-number" onclick="display('9')">9</button></td>
+                        <td><button class="btn-operator" onclick="display('-')">-</button></td>
+                    </tr>
+                    <tr>
+                        <td><button class="btn-number" onclick="display('4')">4</button></td>
+                        <td><button class="btn-number" onclick="display('5')">5</button></td>
+                        <td><button class="btn-number" onclick="display('6')">6</button></td>
+                        <td><button class="btn-operator"onclick="display('+')">+</button></td>
+                    </tr>
+                    <tr>
+                        <td><button class="btn-number" onclick="display('1')">1</button></td>
+                        <td><button class="btn-number" onclick="display('2')">2</button></td>
+                        <td><button class="btn-number" onclick="display('3')">3</button></td>
+                        <td rowspan="2"><button class="btn-equal" onclick="hello()">=</button></td>
+                    </tr>
+                    <tr>
+                        <td><button class="btn-operator" onclick="display('(')">(</button></td>
+                        <td><button class="btn-number" onclick="display('0')">0</button></td>
+                        <td><button class="btn-operator" onclick="display(')')">)</button></td>
+
+                    </tr>
+                </table>
+        </div>
+    </div>
+    
+</body>
+</html>
