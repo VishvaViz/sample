@@ -1,4 +1,4 @@
-let a=33
+let a=3
 let b=2
 let c=5
 if (a>b && b>c){
